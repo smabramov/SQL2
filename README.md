@@ -22,7 +22,7 @@ group by sotr.staff_id, c2.city_id
 having COUNT(c.customer_id) > 300;
 ```
 
-![]()
+![2.1](https://github.com/smabramov/SQL2/blob/604321aeff65fbbfa68477c5177521f123ca5eec/jpg/2.1.jpg)
 ---
 
 
@@ -37,9 +37,7 @@ select count(film_id) as "Колличество фильмов" from film
 where length > (select AVG(length) from film);
 ```
 
-
-
-![]()
+![2.2](https://github.com/smabramov/SQL2/blob/604321aeff65fbbfa68477c5177521f123ca5eec/jpg/2.2.jpg)
 ---
 
 
@@ -57,7 +55,8 @@ group by MONTH(payment_date)
 order by SUM(p.amount ) 
 desc limit 1;
 ```
-![]()
+
+![2.3](https://github.com/smabramov/SQL2/blob/604321aeff65fbbfa68477c5177521f123ca5eec/jpg/2.3.jpg)
 
 
 ---
