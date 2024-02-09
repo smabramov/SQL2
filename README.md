@@ -49,14 +49,13 @@ where length > (select AVG(length) from film);
 ## Решение
 
 ```
-select month(payment_date) as "Месяц", SUM(p.amount) "Сумма платежей", COUNT(p.rental_id) "Колличество аренд" 
-from payment p
-group by MONTH(payment_date)
-order by SUM(p.amount ) 
-desc limit 1;
+SELECT DATE_FORMAT(p.payment_date, '%M, %Y') AS Месяц, SUM(p.amount) AS Сумма_платежей, COUNT(p.rental_id) AS Колличество_аренд
+FROM payment p 
+GROUP BY Месяц
+ORDER BY Сумма_платежей LIMIT 1;
 ```
 
-![2.3](https://github.com/smabramov/SQL2/blob/604321aeff65fbbfa68477c5177521f123ca5eec/jpg/2.3.jpg)
+![2.4]()
 
 
 ---
