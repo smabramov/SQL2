@@ -55,7 +55,7 @@ GROUP BY Месяц
 ORDER BY Сумма_платежей LIMIT 1;
 ```
 
-![2.4]()
+![2.4](https://github.com/smabramov/SQL2/blob/e8e1815ae92ef7229bad1086ec13f411eab6d4e7/jpg/2.4.jpg)
 
 
 ---
